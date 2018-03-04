@@ -16,11 +16,21 @@ buildscript {
 	}
 }
 
-
 allprojects {
 /*
 * https://github.com/stevesaliman/gradle-properties-plugin
 */
 apply plugin: 'net.saliman.properties'
+
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+}
+
+subprojects {
+apply plugin: 'java'
+
+tasks.withType(JavaCompile) {
+    options.compilerArgs += ["-Xdoclint:none", "-Xlint:none", "-nowarn"]
+}
 
 }
