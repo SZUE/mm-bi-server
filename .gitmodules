@@ -16,3 +16,7 @@
 [submodule "externals/DJ-Native-Swing"]
 	path = externals/DJ-Native-Swing
 	url = git@github.com:SZUE/DJ-Native-Swing
+[submodule "externals/eclipse.platform.swt"]
+	path = externals/eclipse.platform.swt
+	url = http://git.eclipse.org/gitroot/platform/eclipse.platform.swt.git
+	branch = R4_7
