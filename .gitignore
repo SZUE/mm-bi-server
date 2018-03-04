@@ -20,9 +20,3 @@ gradle-local.properties
 
 # JAVA FehlerDumps
 hs_err_*.log
-
-# externals
-externals/
-
-# internals
-internals/
