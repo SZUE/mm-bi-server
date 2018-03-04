@@ -1,0 +1,15 @@
+[submodule "externals/boxable"]
+	path = externals/boxable
+	url = git@github.com:SZUE/boxable.git
+[submodule "externals/xpp3"]
+	path = externals/xpp3
+	url = git@github.com:SZUE/xpp3.git
+[submodule "externals/xsoap"]
+	path = externals/xsoap
+	url = git@github.com:SZUE/xsoap.git
+[submodule "externals/piccolo2d.java"]
+	path = externals/piccolo2d.java
+	url = git@github.com:SZUE/piccolo2d.java.git
+[submodule "internals/instantOLAP"]
+	path = internals/instantOLAP
+	url = root@code.szue.net:/srv/gitlab/repositories/tbehrends/instantOLAP.git
