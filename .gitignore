@@ -1,5 +1,5 @@
 .gradle
-/build/
+build/
 
 # Ignore Gradle GUI config
 gradle-app.setting
@@ -20,3 +20,9 @@ gradle-local.properties
 
 # JAVA FehlerDumps
 hs_err_*.log
+
+# externals
+externals/
+
+# internals
+internals/
