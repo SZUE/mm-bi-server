@@ -16,3 +16,7 @@ gradle-app.setting
 # https://github.com/stevesaliman/gradle-properties-plugin
 # ignore developers own file - artifactory access
 gradle-local.properties
+
+
+# JAVA FehlerDumps
+hs_err_*.log

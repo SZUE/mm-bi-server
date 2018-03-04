@@ -1,1 +1,57 @@
 rootProject.name = 'MM Server'
+
+include ':internals:instantOLAP:iolapLogin'
+include ':internals:instantOLAP:iolapUtil'
+include ':internals:instantOLAP:iolapLSAPI'
+include ':internals:instantOLAP:iolapLS'
+include ':internals:instantOLAP:iolapLicenseTool'
+include ':internals:instantOLAP:iolapLog'
+include ':internals:instantOLAP:iolapSQL'
+include ':internals:instantOLAP:iolapXML'
+include ':internals:instantOLAP:iolapSoapClient'
+include ':internals:instantOLAP:iolapWSAPI'
+include ':internals:instantOLAP:iolapXMLA'
+include ':internals:instantOLAP:iolapWS'
+include ':internals:instantOLAP:iolapLanguage'
+include ':internals:instantOLAP:iolapGUI'
+include ':internals:instantOLAP:iolapThinlets'
+include ':internals:instantOLAP:iolapViewer'
+include ':internals:instantOLAP:iolapQueryEditor'
+include ':internals:instantOLAP:iolapApplet'
+include ':internals:instantOLAP:iolapWeb'
+include ':internals:instantOLAP:iolapWorkbench'
+include ':internals:instantOLAP:iolapFirstSteps'
+
+project(':internals:instantOLAP:iolapLogin').projectDir = "$rootDir/internals/instantOLAP/iolapLogin" as File
+project(':internals:instantOLAP:iolapUtil').projectDir = "$rootDir/internals/instantOLAP/iolapUtil" as File
+project(':internals:instantOLAP:iolapLSAPI').projectDir = "$rootDir/internals/instantOLAP/iolapLSAPI" as File
+project(':internals:instantOLAP:iolapLS').projectDir = "$rootDir/internals/instantOLAP/iolapLS" as File
+project(':internals:instantOLAP:iolapLicenseTool').projectDir = "$rootDir/internals/instantOLAP/iolapLicenseTool" as File
+project(':internals:instantOLAP:iolapLog').projectDir = "$rootDir/internals/instantOLAP/iolapLog" as File
+project(':internals:instantOLAP:iolapSQL').projectDir = "$rootDir/internals/instantOLAP/iolapSQL" as File
+project(':internals:instantOLAP:iolapXML').projectDir = "$rootDir/internals/instantOLAP/iolapXML" as File
+project(':internals:instantOLAP:iolapSoapClient').projectDir = "$rootDir/internals/instantOLAP/iolapSoapClient" as File
+project(':internals:instantOLAP:iolapWSAPI').projectDir = "$rootDir/internals/instantOLAP/iolapWSAPI" as File
+project(':internals:instantOLAP:iolapXMLA').projectDir = "$rootDir/internals/instantOLAP/iolapXMLA" as File
+project(':internals:instantOLAP:iolapWS').projectDir = "$rootDir/internals/instantOLAP/iolapWS" as File
+project(':internals:instantOLAP:iolapLanguage').projectDir = "$rootDir/internals/instantOLAP/iolapLanguage" as File
+project(':internals:instantOLAP:iolapGUI').projectDir = "$rootDir/internals/instantOLAP/iolapGUI" as File
+project(':internals:instantOLAP:iolapThinlets').projectDir = "$rootDir/internals/instantOLAP/iolapThinlets" as File
+project(':internals:instantOLAP:iolapViewer').projectDir = "$rootDir/internals/instantOLAP/iolapViewer" as File
+project(':internals:instantOLAP:iolapQueryEditor').projectDir = "$rootDir/internals/instantOLAP/iolapQueryEditor" as File
+project(':internals:instantOLAP:iolapApplet').projectDir = "$rootDir/internals/instantOLAP/iolapApplet" as File
+project(':internals:instantOLAP:iolapWeb').projectDir = "$rootDir/internals/instantOLAP/iolapWeb" as File
+project(':internals:instantOLAP:iolapWorkbench').projectDir = "$rootDir/internals/instantOLAP/iolapWorkbench" as File
+project(':internals:instantOLAP:iolapFirstSteps').projectDir = "$rootDir/internals/instantOLAP/iolapFirstSteps" as File
+
+
+include ':externals:boxable'
+include ':externals:piccolo2d.java:core'
+include ':externals:piccolo2d.java:swt'
+include ':externals:piccolo2d.java:extras'
+include ':externals:xpp3'
+include ':externals:xsoap'
+include ':externals:DJ-Native-Swing:DJNativeSwing'
+include ':externals:DJ-Native-Swing:DJNativeSwing-SWT'
+include ':externals:DJ-Native-Swing:DJNativeSwing-SWTCore'
+include ':externals:DJ-Native-Swing:jna_WindowUtils'
