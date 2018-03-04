@@ -34,6 +34,12 @@ apply plugin: 'idea'
 subprojects {
 apply plugin: 'java'
 
+//enable compilation in a separate daemon process
+options.fork = true
+
+//enable incremental compilation
+options.incremental = true
+
 tasks.withType(JavaCompile) {
     options.compilerArgs += ["-Xdoclint:none", "-Xlint:none", "-nowarn"]
 }
