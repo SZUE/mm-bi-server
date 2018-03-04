@@ -33,15 +33,17 @@ apply plugin: 'idea'
 
 subprojects {
 apply plugin: 'java'
-
 //enable compilation in a separate daemon process
 options.fork = true
-
 //enable incremental compilation
 options.incremental = true
 
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
 tasks.withType(JavaCompile) {
     options.compilerArgs += ["-Xdoclint:none", "-Xlint:none", "-nowarn"]
+    options.encoding = 'UTF-8'
 }
 
 }
