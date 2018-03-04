@@ -13,3 +13,6 @@
 [submodule "internals/instantOLAP"]
 	path = internals/instantOLAP
 	url = root@code.szue.net:/srv/gitlab/repositories/tbehrends/instantOLAP.git
+[submodule "externals/DJ-Native-Swing"]
+	path = externals/DJ-Native-Swing
+	url = git@github.com:SZUE/DJ-Native-Swing
