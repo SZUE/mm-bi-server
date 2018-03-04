@@ -1,4 +1,26 @@
-# https://github.com/stevesaliman/gradle-properties-plugin
+buildscript {
+	repositories {
+		jcenter()
+	        maven {
+	                credentials {
+			        username '$steinbeisUser'
+		                password '$steinbeisPass'
+	                }
+			url 'https://service.office.szue.net/artifactory/libs-snapshot'
+			url 'https://service.office.szue.net/artifactory/libs-release'
+	        }
+	}
+
+	dependencies {
+		classpath 'net.saliman:gradle-properties-plugin:1.4.6'
+	}
+}
+
+
 allprojects {
-  apply plugin: 'net.saliman.properties'
+/*
+* https://github.com/stevesaliman/gradle-properties-plugin
+*/
+apply plugin: 'net.saliman.properties'
+
 }
