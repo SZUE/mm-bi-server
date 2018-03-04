@@ -5,6 +5,8 @@ wrapper {
 
 buildscript {
 	repositories {
+		mavenCentral()
+		mavenLocal()
 		jcenter()
 	        maven {
 	                credentials {
@@ -22,24 +24,23 @@ buildscript {
 }
 
 allprojects {
-/*
-* https://github.com/stevesaliman/gradle-properties-plugin
-*/
-apply plugin: 'net.saliman.properties'
-
-apply plugin: 'eclipse'
-apply plugin: 'idea'
+// https://github.com/stevesaliman/gradle-properties-plugin
+	apply plugin: 'net.saliman.properties'
+// IDE Plugins
+	apply plugin: 'eclipse'
+	apply plugin: 'idea'
 }
 
 subprojects {
-apply plugin: 'java'
-//enable compilation in a separate daemon process
-options.fork = true
-//enable incremental compilation
-options.incremental = true
 
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
+	sourceCompatibility = '1.7'
+	targetCompatibility = '1.7'
+
+	apply plugin: 'java'
+	//enable compilation in a separate daemon process
+	options.fork=true
+	//enable incremental compilation
+	options.incremental=true
 
 tasks.withType(JavaCompile) {
     options.compilerArgs += ["-Xdoclint:none", "-Xlint:none", "-nowarn"]
